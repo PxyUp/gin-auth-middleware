@@ -16,7 +16,7 @@ type User struct {
 }
 
 var (
-	userFn = func([]byte) (interface{}, error) {
+    userFn = func([]byte) (interface{}, error) {
         user := &User{}
         err := json.Unmarshal(body, user)
         if err != nil {
